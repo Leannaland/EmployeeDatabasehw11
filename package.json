@@ -1,0 +1,22 @@
+{
+  "name": "employee-db",
+  "version": "1.0.0",
+  "description": "\" \"",
+  "main": "EE_TrackerDBConnection.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leannaland/EmployeeDatabasehw11.git"
+  },
+  "keywords": [
+    "employee"
+  ],
+  "author": "\"\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leannaland/EmployeeDatabasehw11/issues"
+  },
+  "homepage": "https://github.com/Leannaland/EmployeeDatabasehw11#readme"
+}
