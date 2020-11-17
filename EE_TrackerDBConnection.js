@@ -1,3 +1,4 @@
+const util = require("util");
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
@@ -11,11 +12,10 @@ var connection = mysql.createConnection({
 
   // Your password
   password: "mrssnuffy11",
-  database: "Employee_TrackerDB"
 });
 
-connection.connect(function(err) {
-  if (err) throw err;
-  console.log("connected as id " + connection.threadId);
-  connection.end();
-});
+// Setting up connection.query to use promises instead of callbacks
+// This allows us to use the async/await syntax
+connection.query = util.promisify(connection.query);
+
+module.exports = connection;
